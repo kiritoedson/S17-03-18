@@ -15,6 +15,7 @@ public class TextFragmentActivity extends FragmentActivity implements ControldFr
 
     @Override
     public void onButtonsClick(int textSize, String text) {
-        TextFragment fragment=(TextFragment)getSupportFragmentManager().findFragmentById(R.layout.activity_main2);
+        TextFragment fragment=(TextFragment)getSupportFragmentManager().findFragmentById(R.id.textfragment2);
+        fragment.changeTextProgress(textSize,text);
     }
 }
