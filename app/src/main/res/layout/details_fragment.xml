@@ -14,7 +14,7 @@
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="200dp"/>
 
     <TextView
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Localidad"
         android:textSize="18sp"
-        android:layout_marginLeft="70dp"
+        android:layout_marginLeft="0dp"
         android:textColor="@android:color/white"
         />
 </LinearLayout>

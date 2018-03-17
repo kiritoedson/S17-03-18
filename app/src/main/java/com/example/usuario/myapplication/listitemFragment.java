@@ -28,7 +28,8 @@ public class listitemFragment extends ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         DetailsFragment details = (DetailsFragment) getFragmentManager().findFragmentById(R.id.fragmentDetail);
-        details.change("Nombre: " + users[position], "Localidad: " + locations[position]);
+        /*details.change("Nombre: " + users[position], "Localidad: " + locations[position]);*/
+        details.change("Nombre: "+Data[position].getName(),"Localidad: "+Data[position].getLocation()+ "\nCompania: "+Data[position].getCompania());
         getListView().setSelector(android.R.color.holo_blue_dark);
     }
 
@@ -45,7 +46,7 @@ public class listitemFragment extends ListFragment {
         Activity context;
 
         public UserAdapter(listitemFragment context) {
-            super(context.getActivity(), R.layout.usetitemlayout);
+            super(context.getActivity(), R.layout.usetitemlayout,Data);
             this.context = context.getActivity();
         }
 
